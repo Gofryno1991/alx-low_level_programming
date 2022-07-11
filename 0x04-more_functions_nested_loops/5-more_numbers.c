@@ -1,23 +1,27 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
  * print_most_numbers - prints numbers
  * Return:0
  */
-
-void print_most_numbers(void)
+int main(void)
 {
-	char n = 0;
-
-	while (n <= 9)
+	int i = 0;
+	int j;
+	
+	while (i < 11)
 	{
-		if (n != 2 && n != 4)
+		j = 0;
+		while (j < 15)
 		{
-			_putchar('0' + n);
+
+			printf("%d", j);
+			j++;
 		}
 
-		n++;
+		printf("\n");
+		i++;
 	}
-	_putchar('\n');
-
+	return (0);
 }
